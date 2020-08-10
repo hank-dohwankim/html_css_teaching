@@ -1,0 +1,66 @@
+#container {
+  width: 400px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 3%;
+  border-top: 1px solid #bdbdbd;
+  border-left: 1px solid #bdbdbd;
+  border-right: 1px solid #bdbdbd;
+}
+.accordion label {
+  display: block;
+  background-color: #eeeeee;
+  padding: 10px;
+  color: #424242;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  border-bottom: 1px solid #bdbdbd;
+  border-top: 1px solid #ffffff;
+}
+
+.accordion p {
+  color: #424242;
+  padding: 10px;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  border-bottom: 1px solid #bdbdbd;
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+  text-align: left;
+  background-color: #fff;
+  margin: 0;
+}
+
+#input-1:checked ~ .hiddentext {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+#input-1 {
+  display: none;
+  position: relative;
+}
+
+#input-2:checked ~ .hiddentext {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+#input-2 {
+  display: none;
+  position: relative;
+}
+
+#input-3:checked ~ .hiddentext {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+#input-3 {
+  display: none;
+  position: relative;
+}

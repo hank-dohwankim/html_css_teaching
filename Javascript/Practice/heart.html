@@ -1,0 +1,25 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heart</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <i id="heart" class="fas fa-heart"></i>
+  </body>
+</html>
+
+<script>
+  const heartClick = document.querySelector('#heart');
+
+  heartClick.addEventListener('click', () => {
+    heartClick.classList.toggle('fa-heart-broken');
+    // document.getElementById('heart').className = 'fas fa-heart'; // 아이콘 찾는중... 여긴 토글 할 필요가 없고 클릭 하면 액티브 되면 되니까..
+  });
+</script>

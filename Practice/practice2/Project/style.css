@@ -1,0 +1,13 @@
+.top-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-header .logo svg {
+  width: 280px;
+}
+
+.main-header nav {
+  display: flex;
+}

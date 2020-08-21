@@ -1,0 +1,70 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+    <style>
+      .card {
+        width: 400px;
+        height: 400px;
+        background-color: tomato;
+        margin: 10px;
+        font-size: 30px;
+        text-align: center;
+      }
+      /* Mobile */
+      @media only screen and (max-width: 500px) {
+        body {
+          background-color: red;
+        }
+        #mobile {
+          color: white;
+        }
+      }
+
+      /* Tablet */
+      @media (min-width: 501px) and (max-width: 768px) {
+        body {
+          background-color: blue;
+        }
+        #tablet {
+          color: white;
+        }
+      }
+
+      /* Desktop */
+      @media (min-width: 769px) and (max-width: 1200px) {
+        body {
+          background-color: green;
+        }
+        #desktop {
+          color: white;
+        }
+      }
+
+      /* Widescreen */
+      @media (min-width: 1201px) {
+        body {
+          background-color: black;
+        }
+        #widescreen {
+          color: white;
+        }
+        .card {
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mobile"><h1>Mobile</h1></div>
+    <div id="tablet"><h1>Tablet</h1></div>
+    <div id="desktop"><h1>Desktop</h1></div>
+    <div id="widescreen"><h1>Widescreen</h1></div>
+    <div class="container">
+      <div class="card">1</div>
+      <div class="card">2</div>
+      <div class="card">3</div>
+      <div class="card">4</div>
+    </div>
+  </body>
+</html>

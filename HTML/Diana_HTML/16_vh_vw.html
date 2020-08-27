@@ -1,0 +1,68 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vh & Vw Units</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome!</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad,
+        voluptates quas saepe fuga recusandae quibusdam aliquam soluta, incidunt
+        mollitia numquam corporis, harum reiciendis odio doloremque dolorum rem
+        pariatur vel!
+      </p>
+      <a href="#" class="btn">More...</a>
+    </header>
+    <section>
+      <h3>About us</h3>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab sint amet
+        nihil provident labore molestiae, possimus aliquid accusamus voluptates
+        rerum odio temporibus facere, tenetur nemo culpa, corrupti illo
+        quibusdam ullam?
+      </p>
+    </section>
+  </body>
+</html>
+
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    height: 100vh;
+  }
+
+  header h1 {
+    font-size: 3rem;
+    margin: 1.5rem;
+  }
+
+  .btn {
+    display: inline-block;
+    background-color: #f3f3f3;
+    margin-top: 1rem;
+    padding: 0.75 1rem;
+    text-decoration: none;
+    border-radius: 2px;
+  }
+
+  @media (max-height: 500px) {
+    header {
+      padding-top: 5rem;
+    }
+  }
+</style>
